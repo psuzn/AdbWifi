@@ -1,4 +1,4 @@
-#!/system/bin/
+#!/system/bin/sh
 
 OPTIONS=("Start adb over wifi" "Stop adb over wifi" "None")
 
@@ -15,7 +15,7 @@ OPTIONS=("Start adb over wifi" "Stop adb over wifi" "None")
                 echo "adb over WiFi stopped";
                 break
        else
-
+       	
 	echo "Nothing is Done";
         	break
        fi
