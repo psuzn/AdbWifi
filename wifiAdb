@@ -1,1 +1,22 @@
+#!/system/bin/
 
+OPTIONS=("Start adb over wifi" "Stop adb over wifi" "None")
+
+   select opt in "${OPTIONS[@]}"; do
+       if [ "$opt" = "Start adb over wifi" ]; then
+       		setprop service.adb.tcp.port 5555
+	stop adbd
+	start adbd
+
+	echo "adb over WiFi started";
+        	break
+       elif [ "$opt" = "Stop adb over wifi" ]; then
+            stop adbd
+                echo "adb over WiFi stopped";
+                break
+       else
+
+	echo "Nothing is Done";
+        	break
+       fi
+   done
