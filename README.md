@@ -40,7 +40,15 @@ exit
 exit
 ```
 Now disconnect your device and open terminal emulator in it and type:
-
+```
+$ su
+```
+Then give the superuser permission for terminal,then you'll see $ changes to #
+```
+$ su
+#
+```
+after that
 ```
 AdbWifi
 ```
@@ -67,9 +75,9 @@ and run 'adb devices' to check your device
 ```
 In your terminal or CMD type following:
 ```
-suzan@archbox:/ # adb connect 192.168.1.5
+$ adb connect 192.168.1.5
 connected to 192.168.1.59:5555
-suzan@archbox:/ # adb devices
+$ adb devices
 List of devices attached
 192.168.1.59:5555	device
 ```
