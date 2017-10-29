@@ -1,5 +1,5 @@
 # AdbWifi
- Unless you are using CM or lineage based rom with support for adb over wifi, you have to 
+ Unless you are using CM or lineage based rom which provides ADB over Wifi natively, you have to 
 connect  your device via bluethooth and run following command to  enable adb over WiFi.I have written a small bash script for Android to enable adb (android debugging bridge) over your local network like WiFi.
 
 ```
